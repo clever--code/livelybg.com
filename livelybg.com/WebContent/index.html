@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lively BG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- codeMirror -->
+<link rel=stylesheet href="assets/codeMirror/doc/docs.css">
+<link rel="stylesheet" href="assets/codeMirror/lib/codemirror.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/3024-day.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/3024-night.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/ambiance.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/base16-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/base16-light.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/blackboard.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/cobalt.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/eclipse.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/elegant.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/erlang-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/lesser-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/mbo.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/mdn-like.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/midnight.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/monokai.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/neat.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/night.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/paraiso-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/paraiso-light.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/pastel-on-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/rubyblue.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/solarized.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/the-matrix.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/tomorrow-night-eighties.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/twilight.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/vibrant-ink.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/xq-dark.css">
+<link rel="stylesheet" href="assets/codeMirror/theme/xq-light.css">
+<script src="assets/codeMirror/lib/codemirror.js"></script>
+<script src="assets/codeMirror/mode/javascript/javascript.js"></script>
+<script src="assets/codeMirror/addon/selection/active-line.js"></script>
+<script src="assets/codeMirror/addon/edit/matchbrackets.js"></script>
+
+
+<!-- font-awesome -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<!-- livelybg.com -->
+<script type="text/javascript" src="assets/js/livelybg.com.mini.js"></script>
+
+
+<!-- css demo -->
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/hover.css">
+
+</head>
+<body data-livelybg="{'src':'assets/video/513942.mp4', 'autoplay':true, 'muted':false, 'loop':true, 'preload':true, 'controls':false, 'scroll':false, 'id':'videoDemo'}">
+
+	<div id="topBar">
+		<ul>
+			<li><i data-livelybg-play='videoDemo' class="controls fa fa-pause wobble-vertical"></i></li>
+			<li><i data-livelybg-mute='videoDemo' class="controls fa fa-volume-up wobble-vertical"></i></li>
+		</ul>
+	</div>
+
+	<div class="logoTitle wobble-bottom">Lively BG</div>
+	<div class="container">
+	<h1>Video Background Full Screen</h1>
+	<p>The Lively BG is a simple implementation. <br/>You include a src script in html header, see the sample link: <br/> <span>&lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/livelybg.com.js&quot;&gt;&lt;/script&gt;</span></p>
+	<p>Use a data-livelybg to set your background video:</p>
+	
+	<form class="code codeA"><textarea id="codeA" name="code">
+	<body data-livelybg="
+	{
+		'src':'assets/video/513942.mp4', 
+		'autoplay':true, 
+		'muted':false, 
+		'loop':true, 
+		'preload':true, 
+		'controls':false, 
+		'scroll':false, 
+		'id':'videoDemo'
+	}
+	">
+	</textarea></form>
+	
+	<p>
+		<br/>See a complete demonstration:
+	</p>
+	
+<form class="code codeB"><textarea id="codeB" name="code">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lively BG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- font-awesome -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!-- livelybg.com -->
+<script type="text/javascript" src="assets/js/livelybg.com.mini.js"></script>
+
+</head>
+<body data-livelybg="{'src':'assets/video/513942.mp4', 'autoplay':true, 'muted':false, 'loop':true, 'preload':true, 'controls':false, 'scroll':false, 'id':'videoDemo'}">
+
+...
+
+</body>
+</html>
+</textarea></form>
+
+	<p>
+		<br/>Include buttons control is even simpler: <br/>The <span>data-livelybg-*='yourVideoId'</span>
+	</p>
+
+	<form class="code codeC"><textarea id="codeC" name="code">
+		<ul>
+			<li><i data-livelybg-play='videoDemo' class="controls fa fa-pause wobble-vertical"></i></li>
+			<li><i data-livelybg-mute='videoDemo' class="controls fa fa-volume-up wobble-vertical"></i></li>
+		</ul>
+	</textarea></form>
+
+	<p>
+		<br/>
+	</p>
+	
+	
+	<h2>The Project</h2>
+		<p>This is an open-source project, developed by CLEVER CODE (<a href="http://clevercode.com.br/" target="_blank">http://clevercode.com.br/</a>), where it follows implemented under the GNU-GPL3 (Version 3 of the GNU General Public License);<br/>
+The project still versioned repository on github, and invites developers to support it!</p>
+	</div>
+	
+	<p>
+		<br/><br/>
+	</p>
+	
+	<script>
+		CodeMirror.fromTextArea(document.getElementById("codeA"), {
+		    lineNumbers: true,
+		    styleActiveLine: true,
+		    matchBrackets: true,
+		    theme : 'blackboard'
+		});
+		
+		CodeMirror.fromTextArea(document.getElementById("codeB"), {
+		    lineNumbers: true,
+		    styleActiveLine: true,
+		    matchBrackets: true,
+		    theme : 'blackboard'
+		});
+		
+		CodeMirror.fromTextArea(document.getElementById("codeC"), {
+		    lineNumbers: true,
+		    styleActiveLine: true,
+		    matchBrackets: true,
+		    theme : 'blackboard'
+		});
+	</script>
+</body>
+</html>

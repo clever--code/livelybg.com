@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Plaster);
+
+html,body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+}
+p span{
+	color: #EA0000;
+	font-size: 12px;
+}
+
+.CodeMirror {
+	border: 1px solid black; 
+	font-size:13px
+}
+
+.code{
+	display: inline;
+} 
+
+.codeA .CodeMirror{
+	height: 200px !important;
+}
+
+.codeB .CodeMirror{
+	height: 280px !important;
+}
+
+.codeC .CodeMirror{
+	height: 100px !important;
+}
+
+.controls {
+	font-size: 24px;
+}
+
+.logoTitle{
+	position: relative;
+	top: 70px;
+	left: 50px;
+	width: 650px;
+	font-size: 6em;
+	font-family: 'Plaster', cursive;
+	color: #FFF;
+	text-shadow: 2px 2px 5px #121212;
+	opacity: 0.3;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 30);
+	filter: alpha(opacity = 30);
+	
+ 	-webkit-transition: 0.5s ease-in-out; 
+ 	-moz-transition: 0.5s ease-in-out; 
+ 	-o-transition: 0.5s ease-in-out; 
+ 	transition: 0.5s ease-in-out;
+}
+
+.logoTitle:HOVER{
+	cursor: pointer;
+	opacity: 0.7;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
+	filter: alpha(opacity = 70);
+}
+
+.container{
+	position: relative;
+	top: 100px;
+	min-height: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 250px;
+	background: #FFF;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 0px 20px #000000;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000000;
+	opacity: 0.1;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 10);
+	filter: alpha(opacity = 10);
+	padding: 20px;
+	
+ 	-webkit-transition: 0.5s ease-in-out; 
+ 	-moz-transition: 0.5s ease-in-out; 
+ 	-o-transition: 0.5s ease-in-out; 
+ 	transition: 0.5s ease-in-out;
+}
+
+.container:HOVER{
+	opacity: 0.9;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 90);
+	filter: alpha(opacity = 90);
+}
+
+#topBar {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	height: 50px;
+	width: 100%;
+	-moz-box-shadow: 0px 0px 20px #000000;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#1c1c1c', endColorstr= '#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#1c1c1c', endColorstr = '#000000')";
+	background-image: -moz-linear-gradient(top, #1c1c1c, #000000);
+	background-image: -ms-linear-gradient(top, #1c1c1c, #000000);
+	background-image: -o-linear-gradient(top, #1c1c1c, #000000);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#1c1c1c), to(#000000));
+	background-image: -webkit-linear-gradient(top, #1c1c1c, #000000);
+	background-image: linear-gradient(top, #1c1c1c, #000000);
+	opacity: 0.95;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity= 95);
+	filter: alpha(opacity = 95);
+}
+
+#topBar ul {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px;
+	list-style: none;
+	margin: 0px;
+}
+
+#topBar  ul li {
+	float: right;
+	display: inline;
+	min-height: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+#topBar ul li i {
+	padding: 13px 20px;
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 3px solid #EDEDED;
+	min-height: 27px;
+	height: 27px;
+}
+
+#topBar ul li i:hover {
+	cursor: pointer;
+	color: #6D6D6D;
+	border-bottom: 3px solid #EA0000;
+	color: #6D6D6D;
+}
