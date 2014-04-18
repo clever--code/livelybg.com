@@ -7,9 +7,24 @@ html,body {
 	height: 100%;
 	font-family: sans-serif;
 }
+
 p span{
 	color: #EA0000;
 	font-size: 12px;
+}
+
+.github{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 150px;
+	height: 150px;
+	z-index: 999;
+}
+
+.github img{
+	width: 100%;
+	height: 100%;
 }
 
 .CodeMirror {
@@ -98,7 +113,7 @@ p span{
 	position: fixed;
 	left: 0px;
 	top: 0px;
-	z-index: 999;
+	z-index: 888;
 	height: 50px;
 	width: 100%;
 	-moz-box-shadow: 0px 0px 20px #000000;
